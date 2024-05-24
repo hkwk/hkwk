@@ -127,4 +127,7 @@ li:before {
     float: none;
 }
 
-a { text-decoration: none; }
+a { 
+    text-decoration: none;
+    color: #595959; 
+}
