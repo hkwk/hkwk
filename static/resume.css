@@ -55,7 +55,7 @@ h3 {
 ul {
     color: #595959;
     float: left;
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Lucida Console", monospace;
     font-size: 1.0em;
     margin: 5px 0;
     padding-left: 0;
@@ -65,7 +65,7 @@ ul {
 p {
     color: #595959;
     float: left;
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Lucida Console", monospace;
     font-size: 1.0em;
     margin: 5px 0;
 }
