@@ -14,9 +14,9 @@ env:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: GithubAction
     steps:
       - name: Git Configuration
-        environment: GithubAction
         run: |
           git config --global core.quotePath false
           git config --global core.autocrlf false
