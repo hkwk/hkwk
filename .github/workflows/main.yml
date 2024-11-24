@@ -16,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Git Configuration
+        environment: GithubAction
         run: |
           git config --global core.quotePath false
           git config --global core.autocrlf false
@@ -46,7 +47,7 @@ jobs:
           wget https://github.com/upyun/upx/releases/download/v0.4.8/upx_0.4.8_linux_amd64.tar.gz || { echo "Download failed"; exit 1; }
           tar -xvf upx_0.4.8_linux_amd64.tar.gz || { echo "Extracting failed"; exit 1; }
           chmod +x ./upx || { echo "Permission setting failed"; exit 1; }
-          echo ${UPX_OPERATOR}
+          echo "${UPX_OPERATOR} is operating"
           ./upx login ${UPX_SERVICENAME} ${UPX_OPERATOR} ${UPX_PASSWORD}
           ./upx sync --delete -v ${LOCAL_DIR} ${REMOTE_DIR}
           echo 'Finished.'
