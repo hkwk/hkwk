@@ -25,7 +25,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
@@ -44,8 +44,8 @@ jobs:
           REMOTE_DIR: /
         run: |
           wget https://github.com/upyun/upx/releases/download/v0.4.8/upx_0.4.8_linux_amd64.tar.gz || { echo "Download failed"; exit 1; }
-          tar -zxvf upx_0.4.8_linux_amd64.tar.gz || { echo "Extracting failed"; exit 1; }
-          chmod +x ./upx_0.4.8_linux_amd64 || { echo "Permission setting failed"; exit 1; }
-          ./upx_0.4.8_linux_amd64 login ${UPX_SERVICENAME} ${UPX_OPERATOR} ${UPX_PASSWORD}
-          ./upx_0.4.8_linux_amd64 sync --delete -v ${LOCAL_DIR} ${REMOTE_DIR}
+          tar -xvf upx_0.4.8_linux_amd64.tar.gz || { echo "Extracting failed"; exit 1; }
+          chmod +x ./upx || { echo "Permission setting failed"; exit 1; }
+          ./upx login ${UPX_SERVICENAME} ${UPX_OPERATOR} ${UPX_PASSWORD}
+          ./upx sync --delete -v ${LOCAL_DIR} ${REMOTE_DIR}
           echo 'Finished.'
