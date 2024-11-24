@@ -49,5 +49,5 @@ jobs:
           chmod +x ./upx || { echo "Permission setting failed"; exit 1; }
           echo "${UPX_OPERATOR} is operating"
           ./upx login ${UPX_SERVICENAME} ${UPX_OPERATOR} ${UPX_PASSWORD}
-          ./upx sync --delete -v ${LOCAL_DIR} ${REMOTE_DIR}
+          ./upx sync --delete ${LOCAL_DIR} ${REMOTE_DIR} -v
           echo 'Finished.'
