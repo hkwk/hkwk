@@ -3,10 +3,10 @@ name: Upyun Deploy Pipeline
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 
 env:
   TZ: Asia/Shanghai # 设置当前环境时区
