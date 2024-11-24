@@ -9,7 +9,7 @@ on:
       - main
 
 env:
-    TZ: Asia/Shanghai # 设置当前环境时区
+  TZ: Asia/Shanghai # 设置当前环境时区
 
 jobs:
   deploy:
@@ -33,7 +33,7 @@ jobs:
       - name: Build Pages
         run: |
           mkdir -p public
-          rsync -av P --exclude={public} . ./public
+          rsync -av --exclude=public --exclude='.*' . ./public
           
       - name: deploy-upyun
         env:
@@ -43,8 +43,9 @@ jobs:
           LOCAL_DIR: ./public/
           REMOTE_DIR: /
         run: |
-          wget https://github.com/upyun/upx/releases/download/v0.4.8/upx_0.4.8_linux_amd64.tar.gz
-          tar -zxvf upx_0.4.8_linux_amd64.tar.gz && chmod +x ./upx_0.4.8_linux_amd64
+          wget https://github.com/upyun/upx/releases/download/v0.4.8/upx_0.4.8_linux_amd64.tar.gz || { echo "Download failed"; exit 1; }
+          tar -zxvf upx_0.4.8_linux_amd64.tar.gz || { echo "Extracting failed"; exit 1; }
+          chmod +x ./upx_0.4.8_linux_amd64 || { echo "Permission setting failed"; exit 1; }
           ./upx_0.4.8_linux_amd64 login ${UPX_SERVICENAME} ${UPX_OPERATOR} ${UPX_PASSWORD}
           ./upx_0.4.8_linux_amd64 sync --delete -v ${LOCAL_DIR} ${REMOTE_DIR}
           echo 'Finished.'
