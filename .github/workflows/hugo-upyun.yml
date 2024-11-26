@@ -62,6 +62,7 @@ jobs:
           LOCAL_DIR: ./public/
           REMOTE_DIR: /
         run: |
+          ls -l ${LOCAL_DIR}
           wget https://github.com/upyun/upx/releases/download/v0.4.8/upx_0.4.8_linux_amd64.tar.gz || { echo "Download failed"; exit 1; }
           tar -xvf upx_0.4.8_linux_amd64.tar.gz || { echo "Extracting failed"; exit 1; }
           chmod +x ./upx || { echo "Permission setting failed"; exit 1; }
