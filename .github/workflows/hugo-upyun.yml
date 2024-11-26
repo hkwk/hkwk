@@ -32,7 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: GithubAction
     env:
-      HUGO_VERSION: 0.128.0
+      HUGO_VERSION: 0.120.3
     steps:
       - name: Install Hugo CLI
         run: |
@@ -62,7 +62,6 @@ jobs:
           LOCAL_DIR: ./public/
           REMOTE_DIR: /
         run: |
-          ls -l ${LOCAL_DIR}
           wget https://github.com/upyun/upx/releases/download/v0.4.8/upx_0.4.8_linux_amd64.tar.gz || { echo "Download failed"; exit 1; }
           tar -xvf upx_0.4.8_linux_amd64.tar.gz || { echo "Extracting failed"; exit 1; }
           chmod +x ./upx || { echo "Permission setting failed"; exit 1; }
