@@ -1,0 +1,7 @@
+{{ if eq .Level 2 }}
+<div class="divider">
+  <h{{ .Level }} id="{{ .Anchor | safeURL }}">{{ .Text | safeHTML }}</h{{ .Level }}>
+</div>
+{{ else }}
+<h{{ .Level }} id="{{ .Anchor | safeURL }}">{{ .Text | safeHTML }}</h{{ .Level }}>
+{{ end }}

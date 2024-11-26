@@ -1,0 +1,8 @@
+baseURL = "https://hkl.ac.cn/"
+languageCode = "en-us"
+title = "HKL's Resume"
+theme = "hkl-resume-theme"
+
+[params]
+  description = "HKL's Resume"
+

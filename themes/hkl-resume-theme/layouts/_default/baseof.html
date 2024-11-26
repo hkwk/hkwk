@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <title>{{ .Title }}</title>
+    {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+    <style type="text/css">
+        code{white-space: pre-wrap;}
+        span.smallcaps{font-variant: small-caps;}
+        span.underline{text-decoration: underline;}
+        div.column{display: inline-block; vertical-align: top; width: 50%;}
+    </style>
+    <link rel="stylesheet" href="{{ "css/resume.css" | relURL }}">
+</head>
+<body>
+    {{ block "main" . }}{{ end }}
+    <div class="divider">
+        <h2 id="footer">Footer</h2>
+      </div>
+    <div class="footer">
+        © 2013 ~ {{ now.Format "2006" }}. 
+        <a href="https://beian.miit.gov.cn/">粤ICP备13053581号-5</a>.
+        <a href="http://www.beian.gov.cn/portal/recordQuery">粤公网安备 44070302000613号</a>
+    </div>
+</body>
+</html>
