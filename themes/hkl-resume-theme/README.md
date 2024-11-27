@@ -1,25 +1,14 @@
-# A Hugo theme scored 100 in lighthouse test
+# A Resume theme for hugo
 
 ## Screenshot
 
-![IMG](https://github.com/hiplon/lighthouse100-theme/raw/master/images/screenshot.png)
+![IMG](https://github.com/kunlunh/hklcv/blob/master/themes/hkl-resume-theme/images/screenshot.png)
 
 
-## Demo https://vnf.cc
+## Demo https://hkl.one/
 
-### Blog file tree
+### CV file tree
 ```
 .
 └── content
-    ├── contact
-    │   └──  index.md # 
-    └── page
-    │   ├── page-1.md
-    │   └── page-2.md
-    └── post
-	│   ├── post1.md
-	│   ├── post2.md
-    │   └── post3.md
-	└── search
-        └──  index.md # 
-```
+    └─── index.md
