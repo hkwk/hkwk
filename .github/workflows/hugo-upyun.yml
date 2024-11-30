@@ -52,8 +52,8 @@ jobs:
           HUGO_ENVIRONMENT: production
         run: |
           hugo --minify
-          wget https://raw.githubusercontent.com/kunlunh/kunlunh/refs/heads/main/cvbeian.py
-          python cvbeian.py
+          wget -O ${{ runner.temp }}/cvbeian.py https://raw.githubusercontent.com/kunlunh/kunlunh/refs/heads/main/cvbeian.py
+          python3 ${{ runner.temp }}/cvbeian.py
   # Deployment job
       - name: deploy-to-upyun
         env:
