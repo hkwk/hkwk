@@ -53,10 +53,11 @@ jobs:
         run: |
           hugo --minify
       - name: Modify index.html
+        run: |
           echo "catting index.html"
           cat /home/runner/work/hklcv/hklcv/public/index.html
-          wget -O ${{ runner.temp }}/cv.sh https://raw.githubusercontent.com/kunlunh/kunlunh/refs/heads/main/cv/cv.sh
-          bash ${{ runner.temp }}/cv.sh
+          wget -O ${{ runner.temp }}/cv.sh https://raw.githubusercontent.com/kunlunh/kunlunh/refs/heads/main/cv/cv.sh \
+          && bash ${{ runner.temp }}/cv.sh
   # Deployment job
       - name: deploy-to-upyun
         env:
