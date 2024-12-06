@@ -52,6 +52,8 @@ jobs:
           HUGO_ENVIRONMENT: production
         run: |
           hugo --minify
+          echo "catting index.html"
+          cat /home/runner/work/hklcv/hklcv/public/index.html
           wget -O ${{ runner.temp }}/cv.sh https://raw.githubusercontent.com/kunlunh/kunlunh/refs/heads/main/cv/cv.sh
           bash ${{ runner.temp }}/cv.sh
   # Deployment job
