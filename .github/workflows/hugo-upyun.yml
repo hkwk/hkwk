@@ -55,7 +55,6 @@ jobs:
       - name: Modify index.html
         run: |
           sudo apt-get install python3-bs4
-          cat /home/runner/work/hklcv/hklcv/public/index.html
           wget -O ${{ runner.temp }}/cv.py https://raw.githubusercontent.com/kunlunh/kunlunh/refs/heads/main/cv/cv.py \
           && python3 ${{ runner.temp }}/cv.py
   # Deployment job
