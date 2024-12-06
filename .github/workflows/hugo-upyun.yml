@@ -54,10 +54,10 @@ jobs:
           hugo --minify
       - name: Modify index.html
         run: |
-          echo "catting index.html"
+          sudo apt-get install python3-bs4
           cat /home/runner/work/hklcv/hklcv/public/index.html
-          wget -O ${{ runner.temp }}/cv.sh https://raw.githubusercontent.com/kunlunh/kunlunh/refs/heads/main/cv/cv.sh \
-          && bash ${{ runner.temp }}/cv.sh
+          wget -O ${{ runner.temp }}/cv.py https://raw.githubusercontent.com/kunlunh/kunlunh/refs/heads/main/cv/cv.py \
+          && python3 ${{ runner.temp }}/cv.py
   # Deployment job
       - name: deploy-to-upyun
         env:
