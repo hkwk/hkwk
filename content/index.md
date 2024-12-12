@@ -13,7 +13,7 @@ type: "resume"
 
 ## Experience
 
-### Air Quality Supervisor — Guangzhou Environmental Monitoring Center
+### Air Quality Supervisor — Guangzhou Sub-branch of Guangdong Ecological and Environmental Monitoring Center
 #### Dec 2020 - Present
 
 - Air quality data analysis and release
