@@ -8,7 +8,7 @@ type: "resume"
 # HUANG, Kunlun
 
 > Guangzhou, China  
-> [Email](https://kunlunh.github.io/kunlunh/)  
+> [Email](https://github.com/kunlunh/kunlunh.github.io#comment)  
 > [Linkedin](https://www.linkedin.com/in/huangkl/)
 
 ## Experience
