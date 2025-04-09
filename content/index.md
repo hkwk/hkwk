@@ -10,6 +10,7 @@ type: "resume"
 > Guangzhou, China  
 > [Email](https://github.com/kunlunh/kunlunh.github.io#comment)  
 > [Linkedin](https://www.linkedin.com/in/huangkl/)
+> [Github](https://github.com/kunlunh/)
 
 ## Experience
 
