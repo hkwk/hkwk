@@ -1,12 +1,12 @@
 name = "hklcv-theme"
 license = "MIT"
-licenselink = "https://github.com/kunlunh/hklcv/tree/master/themes/hkl-resume-theme"
+licenselink = "https://github.com/hkwk/hklcv/tree/master/themes/hkl-resume-theme"
 description = "A clean and simple resume theme for Hugo"
-homepage = "https://github.com/kunlunh/hklcv/tree/master/themes/hkl-resume-theme"
+homepage = "https://github.com/hkwk/hklcv/tree/master/themes/hkl-resume-theme"
 tags = ["resume", "cv", "portfolio"]
 features = ["responsive"]
 min_version = "0.41.0"
 
 [author]
   name = "HUANG, Kunlun"
-  homepage = "https://kunlunh.github.io/"
+  homepage = "https://hkwk.github.io/"
