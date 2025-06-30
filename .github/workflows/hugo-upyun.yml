@@ -32,7 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: GithubAction
     env:
-      HUGO_VERSION: 0.120.3
+      HUGO_VERSION: 0.118.2
     steps:
       - name: Install Hugo CLI
         run: |
@@ -56,7 +56,7 @@ jobs:
         run: |
           sudo apt-get install python3-bs4
           wget -O ${{ runner.temp }}/cv.py https://raw.githubusercontent.com/hkwk/blog-photo/refs/heads/master/scripts/cv.py \
-          && python3 ${{ runner.temp }}/cv.py
+          && python3 ${{ runner.temp }}/cv.py && cat /home/runner/work/hklcv/hklcv/public/index.html
   # Deployment job
       - name: deploy-to-upyun
         env:
