@@ -15,7 +15,7 @@ And https://hkl.one/ in Cloudflare for Vistors from other regions.
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIaFaE33l45y5cmjDkDUwN7lnByd7LyLaXWp2ZPGiUf+ huangkl@homeomv
 ```
 
-[~hkl.pgp]https://meta.sr.ht/~hkl.pgp
+[~hkl.pgp](https://meta.sr.ht/~hkl.pgp)
 
 ```txt
 -----BEGIN PGP PUBLIC KEY BLOCK-----
