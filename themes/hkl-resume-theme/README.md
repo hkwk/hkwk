@@ -2,7 +2,7 @@
 
 ## Screenshot
 
-![IMG](https://github.com/hkwk/hklcv/blob/master/themes/hkl-resume-theme/images/screenshot.png)
+![IMG](https://github.com/hkwk/hkwk/blob/master/themes/hkl-resume-theme/images/screenshot.png)
 
 
 ## Demo https://hkl.one/
