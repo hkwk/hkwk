@@ -4,9 +4,7 @@ hkl cv version3
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=hkwk&label=Profile%20views&color=0e75b6&style=flat" alt="hkwk" /> </p>
 
 
-https://hkl.ac.cn/ in Upyun for Vistors from Mainland China;
-
-And https://hkl.one/ in Cloudflare for Vistors from other regions.
+https://hkl.ac.cn/ in Upyun for Vistors;
 
 
 [~hkl.keys](https://meta.sr.ht/~hkl.keys)
