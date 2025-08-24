@@ -3,6 +3,14 @@ languageCode = "en-us"
 title = "HKL's Resume"
 theme = "hkl-resume-theme"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.extras]
+        [markup.goldmark.extensions.extras.superscript]
+          enable = true
+
+
 [params]
   description = "HKL's Resume"
 

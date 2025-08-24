@@ -56,7 +56,7 @@ type: "resume"
 
 - Network Enginnering Skills
 - Computer Science Fundamentals
-- College Outstanding Graduates[#](https://xxxy.jnu.edu.cn/2017/0613/c27469a572415/page.htm)
+- College Outstanding Graduates[^#^](https://xxxy.jnu.edu.cn/2017/0613/c27469a572415/page.htm)
 
 ## Portfolio
 
@@ -66,8 +66,8 @@ type: "resume"
 
 CKA  
 LFCS  
-网络规划设计师[*](https://www.ruankao.org.cn/introduction)  
-通信工程师[*](https://www.txks.org.cn/introduction)  
+网络规划设计师[^*^](https://www.ruankao.org.cn/introduction)  
+通信工程师[^*^](https://www.txks.org.cn/introduction)  
 ISC2 CC  
 etc.  
 {{< /col >}}
@@ -76,8 +76,8 @@ etc.
 ### Professionals & Projects
 
 IEEE Young Professionals  
-[MOST(科技部)](https://www.most.gov.cn/index.html) Projects[[1]](http://leot.aiofm.ac.cn/index/info/488)[[2]](http://www.gzb.ac.cn/zhxw/gzdqhxyjs/202303/t20230302_6687737.html)   
-CS Projects[[1]](https://github.com/hkwk)  
+[MOST(科技部)](https://www.most.gov.cn/index.html) Projects[^[1]^](http://leot.aiofm.ac.cn/index/info/488)[^[2]^](http://www.gzb.ac.cn/zhxw/gzdqhxyjs/202303/t20230302_6687737.html)   
+CS Projects[^[1]^](https://github.com/hkwk)  
 Environmental Projects
 {{< /col >}}
 
