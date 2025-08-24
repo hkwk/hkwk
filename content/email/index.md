@@ -5,6 +5,7 @@ date: 2017-01-01
 type: "pure"
 ---
 
+EMAIL
 
 ```txt
 -----BEGIN PGP PUBLIC KEY BLOCK-----
