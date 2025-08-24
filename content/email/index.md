@@ -1,5 +1,5 @@
 ---
-title: "Email Address:"
+title: "Email Address"
 author: "HUANG, Kunlun"
 date: 2017-01-01
 type: "pure"
