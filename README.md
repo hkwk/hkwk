@@ -6,6 +6,8 @@ hkl cv version3
 
 https://hkl.ac.cn/ in Upyun for Vistors;
 
+QRZ: [https://www.qrz.com/db/BG7KUH](https://www.qrz.com/db/BG7KUH)
+
 
 [~hkl.keys](https://meta.sr.ht/~hkl.keys)
 
